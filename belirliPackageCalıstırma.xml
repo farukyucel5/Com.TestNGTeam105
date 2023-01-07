@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite134" >
+     <test name="Nopackage" >
+       <packages>
+           <package name="tests.Day15"></package>
+       </packages>
+      </test>
+</suite>
