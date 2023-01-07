@@ -23,6 +23,7 @@ public class C02_NegetifLoginTesti {
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.kullaniciEmailKutusu.sendKeys(configReader.getProperty("qdGecersizUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(configReader.getProperty("qdGecerliPassword"));
+        qualitydemyPage.handleCookies();
         qualitydemyPage.loginButonu.click();
 
         Assert.assertTrue(qualitydemyPage.kullaniciEmailKutusu.isDisplayed());
@@ -38,6 +39,7 @@ public class C02_NegetifLoginTesti {
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.kullaniciEmailKutusu.sendKeys(configReader.getProperty("qdGecerliUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(configReader.getProperty("qdGecersizPassword"));
+        qualitydemyPage.handleCookies();
         qualitydemyPage.loginButonu.click();
 
         Assert.assertTrue(qualitydemyPage.kullaniciEmailKutusu.isDisplayed());
@@ -56,6 +58,7 @@ public class C02_NegetifLoginTesti {
         qualitydemyPage.ilkLoginLinki.click();
         qualitydemyPage.kullaniciEmailKutusu.sendKeys(configReader.getProperty("qdGecersizUsername"));
         qualitydemyPage.passwordKutusu.sendKeys(configReader.getProperty("qdGecersizPassword"));
+        qualitydemyPage.handleCookies();
         qualitydemyPage.loginButonu.click();
 
         Assert.assertTrue(qualitydemyPage.kullaniciEmailKutusu.isDisplayed());

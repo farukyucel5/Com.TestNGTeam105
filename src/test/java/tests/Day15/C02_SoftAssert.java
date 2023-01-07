@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class C02_SoftAssert {
-    @Test
+    @Test(groups = {"minireg1","minireg2"})
     public void test01(){
         ZeroWebPage zeroWebPage=new ZeroWebPage();
         //1. “http://zero.webappsecurity.com/” Adresine gidin

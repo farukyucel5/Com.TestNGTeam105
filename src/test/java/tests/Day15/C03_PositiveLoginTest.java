@@ -7,7 +7,7 @@ import utilities.Driver;
 import utilities.Reuseable;
 
 public class C03_PositiveLoginTest {
-    @Test
+    @Test(groups = "smoke")
     public void test01(){
 
         // 1- https://www.qualitydemy.com/ anasayfasina gidin

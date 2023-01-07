@@ -8,7 +8,7 @@ import utilities.Driver;
 import utilities.Reuseable;
 
 public class C01_SoftAssertions {
-    @Test
+    @Test(groups = "minireg2")
     public void test01(){
         Driver.getDriver().get("https://www.amazon.com/");
 
