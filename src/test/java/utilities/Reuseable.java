@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.function.Function;
 
 public class Reuseable {
-
     public static String getScreenshot(String name) throws IOException {
         // naming the screenshot with the current date to avoid duplication
         String date = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
@@ -32,6 +31,9 @@ public class Reuseable {
         FileUtils.copyFile(source, finalDestination);
         return target;
     }
+
+
+
     //========Switching Window=====//
     public static void switchToWindow(String targetTitle) {
         String origin = Driver.getDriver().getWindowHandle();
@@ -72,11 +74,14 @@ public class Reuseable {
         }
         return elemTexts;
     }
-    public  static   void bekle(int value){
+
+    //   HARD WAIT WITH THREAD.SLEEP
+//   waitFor(5);  => waits for 5 second
+    public static void bekle(int saniye) {
         try {
-            Thread.sleep(value*1000);
+            Thread.sleep(saniye * 1000);
         } catch (InterruptedException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 
