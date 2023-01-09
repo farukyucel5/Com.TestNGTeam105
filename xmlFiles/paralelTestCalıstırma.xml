@@ -1,0 +1,24 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" parallel="tests" thread-count="2" >
+    <test name="istenen sınıfları calıstırma" >
+        <classes>
+            <class name="tests.Day15.C01_SoftAssertions"></class>
+            <class name="tests.Day16SmokeTest.C03_SwitchingWindows"></class>
+
+
+        </classes>
+    </test>
+    <test name="istenen sınıfları calıstırma1" >
+        <classes>
+
+            <class name="tests.Day14_testNG.C03_NutellaTesti"></class>
+            <class name="tests.Day16SmokeTest.C02_NegetifLoginTesti"></class>
+
+
+        </classes>
+    </test>
+
+
+
+</suite>
